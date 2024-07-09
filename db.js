@@ -1,5 +1,5 @@
 const mysql = require('mysql');
-const beenv  = require('dotenv');
+const dotenv  = require('dotenv');
 
 dotenv.config();
 const connection = mysql.createConnection({
@@ -15,7 +15,7 @@ const connection = mysql.createConnection({
 connection.connect((err)=>{
     if(err)
     {
-        console.error("Error connection to the mysql,err.message");
+        console.log("Error connection to the mysql,err.message");
         process.exit(1);
     }
     else{
