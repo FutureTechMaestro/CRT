@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Book</title>
+</head>
+<body>
+    <h2>Add a Book</h2>
+    <form action="http://localhost:8000/process_get" method="GET">
+        <label>
+            Title:
+            <input
+                type="text"
+                name="title"
+                required
+            />
+        </label>
+        <br />
+        <label>
+            Author First Name:
+            <input
+                type="text"
+                name="authorFirstName"
+                required
+            />
+        </label>
+        <br />
+        <label>
+            Author Last Name:
+            <input
+                type="text"
+                name="authorLastName"
+                required
+            />
+        </label>
+        <br />
+        <label>
+            Released Year:
+            <input
+                type="text"
+                name="releasedYear"
+                required
+            />
+        </label>
+        <br />
+        <label>
+            Stock Quantity:
+            <input
+                type="number"
+                name="stockQuantity"
+                required
+            />
+        </label>
+        <br />
+        <label>
+            Pages:
+            <input
+                type="number"
+                name="pages"
+                required
+            />
+        </label>
+        <br />
+        <button type="submit">Add Book</button>
+    </form>
+</body>
+</html>
